@@ -100,7 +100,7 @@ header, footer {
 
 h2 {
   font-family: 'Bree Serif', serif;
-  font-size: 3em;
+  font-size: 2.8em;
   color: #4fa4c9;
   text-align: center;
 }
@@ -171,31 +171,48 @@ nav, ul, li {
   font-style: italic;
 }
 
-.about-content {
+.about-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b22459;
+  margin-top: 30px;
+}
+
+.about-wrapper p {
   text-align: center;
   padding: 30px 20px;
-  background-color: #b22459;
   color: #ffffff;
   line-height: 1.7em;
 }
 
 /* Portfolio */
-.gallery-wrapper {
+.gallery-wrapper figure {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .photo {
-  width: 70%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
 }
 
 figcaption {
-  width: 70%;
+  width: 80%;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 /* Contact */
+footer h2 {
+  padding-top: 15px;
+}
+
  address, p {
   color: #b22459;
   text-align: center;
@@ -305,8 +322,105 @@ figcaption {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
   /* Style adjustments for viewports that meet the condition */
+
+  /*** Tablet Styles ***/
+
+  /* HEADER */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  figure, a .logo {
+    margin: 0;
+    width: 50%;
+    padding-left: 20px;
+  }
+
+  .header-line {
+    display: none;
+  }
+
+  header nav {
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+
+
+  /* ABOUT */
+  .headshot {
+      padding: 30px;
+  }
+
+  .quote {
+    width: 30%;
+    padding: 10px;
+    text-align: left;
+}
+
+  .about-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+  }
+
+  .about-wrapper p {
+    width: 60%;
+  }
+
+  /* PORTFOLIO */
+
+  .photo-wrapper  {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    margin: 0;
+  }
+  .gallery-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+   .photo {
+    width: 90%;
+  }
+  figcaption {
+    width: 80%;
+  }
+
+/* FOOTER */
+  .social {
+    width: 40%;
+    margin: 0 auto;
+  }
+  .social .social-icon {
+    padding: 0;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+/*** Desktop Styles ***/
+
+.about-wrapper {
+  
+}
+
+/* Portfolio */
+  .photo-wrapper {
+    width: 30%;
+  }
 }
 
 @media print,
