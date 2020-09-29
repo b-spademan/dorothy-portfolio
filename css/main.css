@@ -142,7 +142,7 @@ nav, ul {
   flex: 1;
 }
 
-nav, ul, li {
+nav, ul, li, a {
   color: #4fa4c9;
   font-size: 1em;
   font-weight: bolder;
