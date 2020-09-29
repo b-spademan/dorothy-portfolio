@@ -210,7 +210,7 @@ figcaption {
 
 /* Contact */
 footer h2 {
-  padding-top: 15px;
+  padding-top: 30px;
 }
 
  address, p {
@@ -356,7 +356,7 @@ footer h2 {
 
   /* ABOUT */
   .headshot {
-      padding: 30px;
+      padding: 45px 30px 30px;
   }
 
   .quote {
@@ -413,12 +413,27 @@ footer h2 {
 
 /*** Desktop Styles ***/
 
-.about-wrapper {
-  
+.quote {
+  font-size: 2.3em;
 }
-
+.about-wrapper {
+  height: 275px;
+}
+.about-wrapper p {
+  font-size: 1.5em;
+}
 /* Portfolio */
   .photo-wrapper {
+    width: 30%;
+  }
+
+  .address, p {
+    font-size: 1.5em;
+  }
+
+  .social {
+    margin-top: 30px;
+    padding-bottom: 50px;
     width: 30%;
   }
 }
